@@ -8,9 +8,9 @@ class human
         return age;
     }
 
-    public void setAge(int a)
+    public void setAge(int age)
     {
-        age = a;
+        this.age = age;
     }
 
 
@@ -19,9 +19,9 @@ class human
         return name;
     }
 
-    public void setName(String a)
+    public void setName(String name)
     {
-        name = a;
+        this.name = name;
     }
 }
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Fullstack_Telusko.iml" filepath="$PROJECT_DIR$/Java_Fullstack_Telusko.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maven.iml" filepath="$PROJECT_DIR$/Maven.iml" />
     </modules>
   </component>
 </project>

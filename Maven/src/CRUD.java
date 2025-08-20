@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class DemoJDBC {
+public class CRUD {
     public static void main(String[] args) throws Exception {
         /*
         import the package
@@ -14,24 +14,13 @@ public class DemoJDBC {
         String url = "jdbc:postgresql://localhost:5432/Demo";
         String uname = "postgres";
         String pass = "9999";
-        String sql = "select * from student";
+        String sql = "delete from student where sid=5";
 
-//        Class.forName("org.postgresql.Driver");
 
         Connection con = DriverManager.getConnection(url,uname,pass);
         System.out.println("Connected to database successfully");
         Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(sql);
-//        rs.next();
-//
-//        String name = rs.getString("sname");
-//        System.out.println("Name of the student is " + name);
-
-        while(rs.next()) {
-            System.out.print(rs.getInt(1) + " - ");
-            System.out.print(rs.getString(2) + " - ");
-            System.out.println(rs.getInt(3));
-        }
+        st.execute(sql);
 
         con.close();
         System.out.println("Connection closed successfully");
